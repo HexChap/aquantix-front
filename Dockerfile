@@ -1,7 +1,7 @@
 FROM node:21.0.0 as build
 WORKDIR /aquantix-front
 
-COPY package*.json .
+COPY package.json .
 RUN npm install
 COPY . .
 
